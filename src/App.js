@@ -33,8 +33,12 @@ function App() {
     if (quarter === 4) {
       alert `Game Over`;
       setQuarter(1);
+      setHomeScore(0);
+      setAwayScore(0);
     }
   }
+
+  // clock timer
 
   return (
     <div className="container">
