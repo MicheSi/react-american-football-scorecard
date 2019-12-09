@@ -29,6 +29,7 @@ function App() {
     setQuarter(quarter + 1)
     if (quarter === 4) {
       alert `Game Over`;
+      setQuarter(1);
     }
   }
 

@@ -1,16 +1,8 @@
-import React, {useState} from "react";
+import React from "react";
 import "./App.css";
 
-const BottomRow = () => {
-  const [quarter, setQuarter] = useState(1);
+const BottomRow = ({quarter}) => {
   
-  const changeQuarter = e => {
-    setQuarter(quarter + 1)
-    if (quarter === 4) {
-      alert `Game Over`;
-    }
-  }
-
   
   return (
     <div className="bottomRow">
