@@ -8,6 +8,7 @@ function App() {
   const [homeScore, setHomeScore] = useState(0);
   const [awayScore, setAwayScore] = useState(0);
 
+  // score functions
   const homeTD = e => {
     setHomeScore(homeScore + 7);
   };
@@ -21,9 +22,11 @@ function App() {
     setAwayScore(awayScore + 3);
   }
 
+  // team name hooks
   const [homeTeam, setHomeTeam] = useState('Lions');
   const [awayTeam, setAwayTeam] = useState('Tigers');
 
+  // change quarter function
   const [quarter, setQuarter] = useState(1);
   const changeQuarter = e => {
     setQuarter(quarter + 1)
